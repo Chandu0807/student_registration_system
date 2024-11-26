@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registered Student Details</title>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <header>
+        <h1>STUDENT REGISTRATION SYSTEM</h1>
+        <p>
+            Welcome to the Student Registration System! This platform allows students to
+            effortlessly register their details, including name, class, address, and 
+            contact number. It also provides user-friendly functionalities for managing records,
+            enabling you to edit or delete entries as needed. Designed to streamline the registration
+            process, this system ensures efficiency, accuracy, and ease of use for both students and administrators.
+        </p>
+    </header>
+    <!-- form input -->
+<h2>Enter Your Details</h2>
+  <div class="form-container">
+    <div class="f-c">
+    <input type="text" id="student-name" placeholder="Student Name" />
+    <input type="text" id="student-id" placeholder="Student ID" />
+    <input type="email" id="email" placeholder="Email ID" />
+    <input type="text" id="contact-no" placeholder="Contact No" />
+  </div>
+    <div class="btn-flex">
+    <button id="add-btn" class="btn">Add/Update</button>
+  </div>
+  </div>
+
+ 
+  <table>
+    <thead>
+      <tr>
+        <th>Student Name</th>
+        <th>Student ID</th>
+        <th>Email ID</th>
+        <th>Contact No</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="student-records">
+  <!-- here js works -->
+    </tbody>
+  </table>
+
+  <script src="index.js"></script>
+</body>
+</html>
